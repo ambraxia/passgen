@@ -1,0 +1,12 @@
+{
+  "name": "passgen",
+  "version": "1.0.0",
+  "description": "Password generator",
+  "main": "index.js",
+  "repository": "https://github.com/ambraxia/passgen.git",
+  "author": "Andrew Kostin <ambrraxia@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "crypto-js": "^4.0.0"
+  }
+}
