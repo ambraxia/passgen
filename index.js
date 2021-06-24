@@ -1,12 +1,3 @@
-const SYMBOLS_MAP = {
-  a: '@',
-  b: '#',
-  c: '!',
-  d: '%',
-  e: ')',
-  f: '(',
-}
-
 function getElements() {
   const secretElement = document.getElementById('secret')
   const masterElement = document.getElementById('master')
@@ -52,12 +43,6 @@ function generatePassword() {
     .reduce((acc, current, index) => {
       if (index <7 && index % 2 === 0) {
         return [...acc, current.toUpperCase()]
-      }
-      return [...acc, current]
-    }, [])
-    .reduce((acc, current, index) => {
-      if (index > 7) {
-        return [...acc, SYMBOLS_MAP[current] || current]
       }
       return [...acc, current]
     }, [])
